@@ -20,6 +20,10 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   angleMode(DEGREES);
+  
+  var options = {
+    isStatic = true;
+  }
 
   //create player base body
   playerBase = Bodies.rectangle(200, 350, 180, 150, options);
