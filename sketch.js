@@ -22,7 +22,7 @@ function setup() {
   angleMode(DEGREES);
   
   var options = {
-    isStatic = true;
+    isStatic = true
   }
 
   //create player base body
