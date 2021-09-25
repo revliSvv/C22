@@ -30,6 +30,7 @@ function setup() {
   World.add(world, playerBase);
   //create player body
   player = Bodies.rectangle(250, playerBase.position.y - 160, 50, 180, options)
+  World.add(world, player);
 
 
 }
@@ -40,7 +41,7 @@ function draw() {
   //show the player image using image() function
   image(baseimage, playerBase.position.x, playerBase.position.y, 180, 150);
   //show the playerbase image using image() function
-  image(playerimage, player.position.x. player.position.y, 50, 180);
+  image(playerimage, player.position.x, player.position.y, 50, 180);
 
 
   Engine.update(engine);
